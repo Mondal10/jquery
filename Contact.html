@@ -1,0 +1,111 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script> 
+/*mouseover & stop*/
+$(document).ready(function(){
+    $("#flip").mouseover(function(){
+        $("#panel").slideDown(2000);
+    });
+    $("#stop").click(function(){
+        $("#panel").stop();
+    });
+});
+
+/*Animate*/
+$(document).ready(function(){
+    $("h3").mouseenter(function(){
+        $("div1").animate({
+            width: 'toggle'
+        });
+    });
+});
+
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("ul").hide();
+    });
+    $("#show").click(function(){
+        $("ul").show();
+    });
+});
+</script>
+ 
+<style> 
+#panel, #flip {
+    
+    font-size: 18px;
+  
+
+    color: #00AFAF;
+  
+    border-radius: 3px;
+}
+
+#panel {
+    background-color: #233;
+   
+    display: none;
+}
+
+.button {
+    background-color: #669999; 
+    border-radius:6px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50),0 17px 50px 0 rgba(0,0,0,0.20);
+}
+
+</style>
+</head>
+<body background="background3.jpg">
+<font face="tahoma" size="5" color="#00AFAF">
+ 
+<button id="stop" class="button button2">Stop sliding</button>
+
+<div id="flip"><h1>Contact us!! Hey, you!</h1></div>
+<div id="panel"><p>Guess what? We hate going about our job, day in and day out, with no human contact.<br>
+We love someone who'd like to talk to us or tell things to our face, someone who we can bounce ideas with or team up with,<br> or someone who would just make friends with us!
+
+If you want to put a face to the name FastCharge, drop in and say hey at:
+Peninsula Tower, 22nd floor, Bandra Kurla Complex, Bandra East, Mumbai - 400051
+</p>
+<p> And if youre shy or just busy or online friendly like us you can drop by at any of the addresses given below.
+We'll write back. Promise!</p></div>
+
+<p>for any queries contact us at:</p>
+<ul>
+  <li>Business Queries : partnerup@fastcharge.com</li>
+  <li>Payment Queries : payment@fastcharge.com</li>
+  <li>Customer Queries : customerq@fastcharge.com</li>
+</ul>
+<button id="hide" class="button button2">Hide</button>
+<button id="show" class="button button2">Show</button>
+
+
+<font face="tahoma" size="5" color="#00AFAF">
+<h3>Meet our devevlopers</h3>
+
+<div1> 
+<ul>
+    <li>Amit Mondal</li>
+    <li>Shrey Modi</li>
+    <li>Ajinkya More</li>
+<ul>
+</div1>
+
+
+
+</body>
+</html>
